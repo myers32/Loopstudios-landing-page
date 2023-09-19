@@ -18,12 +18,29 @@ body {
   font-family: u.$font-josefin;
   font-size: 0.9375rem;
   font-weight: 300;
-
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1110px;
   margin: 0 auto;
+
+  &--pall {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+
+    @include u.breakpoint-up(medium) {
+      padding: 50px 30px;
+    }
+
+    @include u.breakpoint-up(large) {
+      padding-top: 64px;
+      padding-right: 8px;
+      padding-bottom: 64px;
+      padding-left: 8px;
+    }
+  }
 }
 
 .hide-for-mobile {

@@ -5,19 +5,16 @@
 
   .overlay {}
 
-  nav {}
-
   &__image {
     background-image: url(/images/mobile/image-hero.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    height: 828px;
 
     @include u.breakpoint-up(large) {
       background-image: url(/images/desktop/image-hero.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
+      height: 650px;
     }
   }
 
@@ -25,14 +22,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.125rem 1.875rem;
   }
 
   &__logo {
 
     img {
-      width: 11.5rem;
-      height: 1.625rem;
+      width: 184px;
+      height: 28px;
+
+      @include u.breakpoint-up(large) {
+        width: 194px;
+        height: 33px;
+      }
 
     }
   }
@@ -50,50 +51,13 @@
 
 
   &__links {
+    padding-top: 11px;
 
     a {
-      padding-right: 34px;
       color: g.$white;
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: bold;
+      padding: 11px 16px;
     }
   }
-
-  &__description {
-    margin-top: 13.125rem;
-    display: flex;
-    align-items: center;
-
-  }
-
-  &__table {
-    border: 3px solid g.$white;
-    margin: 0 30px;
-    margin-bottom: 18rem;
-
-
-    @include u.breakpoint-up(medium) {
-      border: 3px solid g.$white;
-      margin: 0 30px;
-      margin-bottom: 18rem;
-      max-width: 70%;
-    }
-
-    p {
-      color: g.$white;
-      text-transform: uppercase;
-      font-size: 40px;
-
-      @include u.breakpoint-up(medium) {
-        font-size: 3.5rem;
-
-      }
-
-      @include u.breakpoint-up(large) {
-        font-size: 3.5rem;
-      }
-    }
-  }
-
-  &__tableText {}
 }

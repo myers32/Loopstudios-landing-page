@@ -1,0 +1,52 @@
+@use "../util" as u;
+@use "../globals" as g;
+
+.hero {
+  &__description {
+    padding: 154px 30px;
+
+    @include u.breakpoint-up(large) {
+      padding-top: 64px;
+      padding-right: 0;
+      padding-left: 8px;
+      padding-bottom: 145px;
+    }
+  }
+
+  &__table {
+    border: 2px solid g.$white;
+    padding: 35px;
+
+    @include u.breakpoint-up(large) {
+      max-width: 58%;
+      padding: 46px 42px 28px 42px;
+    }
+  }
+
+  &__tableText {
+
+    p {
+      font-size: 50px;
+      color: g.$white;
+      text-transform: uppercase;
+      margin: 0;
+
+      @include u.breakpoint-up(medium) {
+        font-size: 55px;
+      }
+
+      @include u.breakpoint-up(large) {
+        font-size: 70px;
+        line-height: 0.9;
+
+        br:nth-child(1) {
+          display: none;
+        }
+
+        br:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
