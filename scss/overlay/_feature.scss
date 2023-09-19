@@ -1,0 +1,28 @@
+@use "../util" as u;
+@use "../globals" as g;
+
+.feature {
+
+  &__content {
+    padding: 122px 30px;
+  }
+
+  &__image {
+    background-image: url(/images/mobile/image-interactive.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 285px;
+
+    @include u.breakpoint-up(large) {
+      background-image: url(/images/desktop/image-interactive.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 500px;
+  
+    }
+  }
+
+  &__text {}
+}
