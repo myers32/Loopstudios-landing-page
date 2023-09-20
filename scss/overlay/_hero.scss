@@ -3,12 +3,13 @@
 
 .hero {
   &__description {
-    padding: 154px 30px;
+    padding-top: 150px;
+
 
     @include u.breakpoint-up(large) {
-      padding-top: 64px;
-      padding-right: 30px;
-      padding-left: 30px;
+      padding-top: 58px;
+      // padding-right: 30px;
+      // padding-left: 30px;
       padding-bottom: 145px;
     }
   }
@@ -26,10 +27,11 @@
   &__tableText {
 
     p {
-      font-size: 34px;
+      font-size: 48px;
       color: g.$white;
       text-transform: uppercase;
       margin: 0;
+      word-wrap: break-word;
 
       @include u.breakpoint-up(medium) {
         font-size: 55px;
@@ -40,7 +42,7 @@
       }
 
       @include u.breakpoint-up(large) {
-        font-size: 70px;
+        font-size: 68px;
         line-height: 0.9;
 
         br:nth-child(1) {
