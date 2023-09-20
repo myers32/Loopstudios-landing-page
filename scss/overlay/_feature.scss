@@ -3,40 +3,78 @@
 
 .feature {
 
+  .container {
+    overflow: hidden;
+
+    @include u.breakpoint-up(large) {
+      padding-top: 160px;
+    }
+  }
+
   &__content {
-    padding: 122px 30px;
+    position: relative;
+
+    // @include u.breakpoint-up(medium) {
+    //   padding: 160px 0;
+    // }
+
+    @include u.breakpoint-up(large) {
+      height: 660px;
+    }
   }
 
   &__image {
     background-image: url(/images/mobile/image-interactive.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    height: 285px;
+    background-size: contain;
+    height: 400px;
+    width: 100%;
+
+    @include u.breakpoint-up(medium) {
+      height: 400px;
+      background-size: contain;
+    }
 
     @include u.breakpoint-up(large) {
       background-image: url(/images/desktop/image-interactive.jpg);
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: cover;
+      background-size: contain;
+      width: 731px;
       height: 500px;
-
     }
   }
 
   &__text {
     padding-top: 52px;
 
-    h1 {
+    @include u.breakpoint-up(large) {
+      position: absolute;
+      background-color: white;
+      width: 554px;
+      height: 410px;
+      padding-top: 0;
+      right: -23px;
+      bottom: 64px;
+      padding-top: 127px;
+    }
+
+    h2 {
       text-transform: uppercase;
-      font-size: 40px;
       text-align: center;
+
+      @include u.breakpoint-up(large) {
+        padding-left: 110px;
+        font-size: 38px;
+        text-align: start;
+      }
     }
 
     p {
       padding-top: 20px;
       padding-right: 40px;
-      padding-bottom: 20px;
+      padding-bottom: 122px;
       padding-left: 40px;
       line-height: 1.5;
       text-align: center;
@@ -44,6 +82,14 @@
       color: hsl(0, 0%, 64%);
       font-size: 17px;
       font-weight: 400;
+
+      @include u.breakpoint-up(large) {
+        padding-top: 25px;
+        padding-left: 110px;
+        padding-bottom: 0;
+        font-size: 14px;
+        text-align: start;
+      }
     }
   }
 }
