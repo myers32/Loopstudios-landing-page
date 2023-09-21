@@ -22,7 +22,7 @@
   }
 
   &__image {
-    background-image: url(/images/mobile/image-interactive.jpg);
+    background-image: url(../../images/mobile/image-interactive.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -34,7 +34,7 @@
     }
 
     @include u.breakpoint-up(large) {
-      background-image: url(/images/desktop/image-interactive.jpg);
+      background-image: url(../../images/desktop/image-interactive.jpg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
