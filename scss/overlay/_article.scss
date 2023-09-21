@@ -75,6 +75,7 @@
       background-position: center center;
       background-size: cover;
       margin-bottom: 30px;
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
 
       @include u.breakpoint-up(large) {
         width: 256px;
@@ -83,8 +84,9 @@
       }
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.75;
         transition: all 200ms ease-in-out;
+        transform: scale(1.05);
       }
     }
 
@@ -97,6 +99,11 @@
       font-family: u.$font-josefin;
       font-size: 32px;
       text-transform: uppercase;
+
+      &:hover {
+        color: black;
+        transition: all 200ms ease-in-out;
+      }
 
       @include u.breakpoint-up(large) {
         bottom: 0;
