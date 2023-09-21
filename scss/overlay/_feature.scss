@@ -5,6 +5,7 @@
 
   .container {
     padding-top: 122px;
+    padding-bottom: 122px;
 
     @include u.breakpoint-up(large) {
       padding-top: 160px;
@@ -26,7 +27,6 @@
     background-position: center center;
     background-size: cover;
     height: 285px;
-    width: 100%;
 
     @include u.breakpoint-up(medium) {
       height: 400px;
@@ -76,7 +76,6 @@
     p {
       padding-top: 20px;
       padding-right: 30px;
-      padding-bottom: 122px;
       padding-left: 30px;
       line-height: 1.5;
       text-align: center;
