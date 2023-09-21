@@ -3,6 +3,10 @@
 
 .article {
 
+  &__container {
+    padding-bottom: 184px;
+  }
+
   &__header {
     padding-bottom: 70px;
 
@@ -33,6 +37,23 @@
 
       @include u.breakpoint-up(large) {
         margin: 0;
+
+        &:hover {
+          background-color: black;
+          transition: all 300ms ease-in-out;
+        }
+
+        &:hover a {
+          color: white;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+
+    &--button {
+
+      a {
+        color: black;
       }
     }
   }
@@ -43,6 +64,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      row-gap: 20px;
     }
 
     a {
@@ -57,10 +79,12 @@
       @include u.breakpoint-up(large) {
         width: 256px;
         height: 450px;
+        margin-bottom: 0;
       }
 
       &:hover {
         opacity: 0.5;
+        transition: all 200ms ease-in-out;
       }
     }
 
@@ -73,6 +97,11 @@
       font-family: u.$font-josefin;
       font-size: 32px;
       text-transform: uppercase;
+
+      @include u.breakpoint-up(large) {
+        bottom: 0;
+        padding: 40px;
+      }
     }
 
     &--earth {
@@ -80,7 +109,10 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-deep-earth.jpg);
-        max-width: 25%;
+
+        p {
+          max-width: 47%;
+        }
       }
     }
 
@@ -89,7 +121,6 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-night-arcade.jpg);
-        max-width: 25%;
       }
     }
 
@@ -98,7 +129,10 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-soccer-team.jpg);
-        max-width: 25%;
+
+        p {
+          max-width: 100%;
+        }
       }
     }
 
@@ -111,7 +145,6 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-grid.jpg);
-        max-width: 25%;
       }
     }
 
@@ -124,7 +157,10 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-from-above.jpg);
-        max-width: 25%;
+
+        p {
+          max-width: 100%;
+        }
       }
     }
 
@@ -133,7 +169,6 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-pocket-borealis.jpg);
-        max-width: 25%;
       }
     }
 
@@ -142,7 +177,6 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-curiosity.jpg);
-        max-width: 25%;
       }
     }
 
@@ -152,7 +186,10 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-fisheye.jpg);
-        max-width: 25%;
+
+        p {
+          max-width: 100%;
+        }
       }
     }
   }
