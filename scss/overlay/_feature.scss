@@ -8,6 +8,7 @@
 
     @include u.breakpoint-up(large) {
       padding-top: 160px;
+      padding-bottom: 160px;
     }
   }
 
@@ -19,7 +20,7 @@
     // }
 
     @include u.breakpoint-up(large) {
-      height: 660px;
+      // height: 660px;
     }
   }
 
@@ -55,8 +56,8 @@
       width: 554px;
       height: 410px;
       padding-top: 0;
-      right: -23px;
-      bottom: 64px;
+      right: -39px;
+      bottom: -95px;
       padding-top: 127px;
     }
 

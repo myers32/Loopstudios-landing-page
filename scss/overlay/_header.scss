@@ -59,27 +59,25 @@
       font-weight: bold;
       padding: 11px 16px;
 
-    }
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      left: 26px;
-      right: 26px;
-      bottom: 0;
-      background: g.$white;
-      opacity: 0;
-      transition: opacity 200ms ease-in;
-    }
-
-    &:hover {
-
       &::before {
-        opacity: 1;
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        left: 26px;
+        right: 26px;
+        bottom: 0;
+        background: g.$white;
+        opacity: 0;
+        transition: opacity 200ms ease-in;
+      }
+
+      &:hover {
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
-}
 }
