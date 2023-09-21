@@ -30,7 +30,7 @@
       line-height: 2.5;
       letter-spacing: 7px;
 
-      
+
       @include u.breakpoint-up(large) {
         margin: 0;
       }
@@ -41,6 +41,8 @@
 
     @include u.breakpoint-up(large) {
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     a {
@@ -52,13 +54,13 @@
       background-size: cover;
       margin-bottom: 30px;
 
-      &:hover {
-        opacity: 0.5;
+      @include u.breakpoint-up(large) {
+        width: 256px;
+        height: 450px;
       }
 
-      @include u.breakpoint-up(large) {
-        width: 100%;
-        height: 450px;
+      &:hover {
+        opacity: 0.5;
       }
     }
 
@@ -78,6 +80,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-deep-earth.jpg);
+        max-width: 25%;
       }
     }
 
@@ -86,6 +89,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-night-arcade.jpg);
+        max-width: 25%;
       }
     }
 
@@ -94,6 +98,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-soccer-team.jpg);
+        max-width: 25%;
       }
     }
 
@@ -106,6 +111,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-grid.jpg);
+        max-width: 25%;
       }
     }
 
@@ -118,6 +124,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-from-above.jpg);
+        max-width: 25%;
       }
     }
 
@@ -126,6 +133,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-pocket-borealis.jpg);
+        max-width: 25%;
       }
     }
 
@@ -134,6 +142,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-curiosity.jpg);
+        max-width: 25%;
       }
     }
 
@@ -143,6 +152,7 @@
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-fisheye.jpg);
+        max-width: 25%;
       }
     }
   }
