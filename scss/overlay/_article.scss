@@ -6,14 +6,42 @@
   &__header {
     padding-bottom: 70px;
 
+    @include u.breakpoint-up(large) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     h2 {
       text-transform: uppercase;
       font-size: 36px;
       text-align: center;
     }
+
+    &--button {
+      width: 201px;
+      height: 52px;
+      margin: 0 auto;
+      margin-bottom: 122px;
+      border: 2px solid black;
+      font-family: "Alata", sans-serif;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 2.5;
+      letter-spacing: 7px;
+
+      
+      @include u.breakpoint-up(large) {
+        margin: 0;
+      }
+    }
   }
 
   &__images {
+
+    @include u.breakpoint-up(large) {
+      display: flex;
+    }
 
     a {
       position: relative;
@@ -26,6 +54,11 @@
 
       &:hover {
         opacity: 0.5;
+      }
+
+      @include u.breakpoint-up(large) {
+        width: 100%;
+        height: 450px;
       }
     }
 
@@ -42,14 +75,26 @@
 
     &--earth {
       background-image: url(../../images/mobile/image-deep-earth.jpg);
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-deep-earth.jpg);
+      }
     }
 
     &--arcade {
       background-image: url(../../images/mobile/image-night-arcade.jpg);
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-night-arcade.jpg);
+      }
     }
 
     &--soccer {
       background-image: url(../../images/mobile/image-soccer-team.jpg);
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-soccer-team.jpg);
+      }
     }
 
     &--grid {
@@ -57,6 +102,10 @@
 
       p {
         max-width: 47%;
+      }
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-grid.jpg);
       }
     }
 
@@ -66,32 +115,35 @@
       p {
         max-width: 69%;
       }
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-from-above.jpg);
+      }
     }
 
     &--borealis {
       background-image: url(../../images/mobile/image-pocket-borealis.jpg);
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-pocket-borealis.jpg);
+      }
     }
 
     &--curiosity {
       background-image: url(../../images/mobile/image-curiosity.jpg);
+
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-curiosity.jpg);
+      }
     }
 
     &--fisheye {
       background-image: url(../../images/mobile/image-fisheye.jpg);
       margin-bottom: 43px;
-    }
-  }
 
-  &__button {
-    width: 201px;
-    height: 52px;
-    margin: 0 auto;
-    border: 2px solid black;
-    font-family: "Alata", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 2.5;
-    letter-spacing: 7px;
+      @include u.breakpoint-up(large) {
+        background-image: url(../../images/desktop/image-fisheye.jpg);
+      }
+    }
   }
 }
