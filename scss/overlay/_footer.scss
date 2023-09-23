@@ -1,7 +1,19 @@
+@use "../util" as u;
+
 .footer {
   background-color: black;
 
-  &__container {}
+  &__container {
+
+    @include u.breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "logo socials"
+        "links copyrights";
+      justify-items: start;
+    }
+  }
 
   &__logo {
     display: flex;
@@ -9,6 +21,12 @@
     justify-content: center;
     padding-top: 70px;
     padding-bottom: 45px;
+
+    @include u.breakpoint-up(large) {
+      grid-area: logo;
+      padding-top: 50px;
+      padding-bottom: 36px;
+    }
   }
 
 
@@ -18,6 +36,14 @@
     align-items: center;
     row-gap: 20px;
     padding-bottom: 60px;
+
+    @include u.breakpoint-up(large) {
+      grid-area: links;
+      flex-direction: row;
+      column-gap: 20px;
+      align-items: start;
+      padding-bottom: 50px;
+    }
 
     a {
       position: relative;
@@ -63,6 +89,12 @@
     column-gap: 24px;
     padding-bottom: 20px;
 
+    @include u.breakpoint-up(large) {
+      grid-area: socials;
+      justify-self: end;
+      padding: 0;
+    }
+
     a {
       position: relative;
 
@@ -101,5 +133,11 @@
     font-size: 17px;
     font-weight: 400;
     padding-bottom: 80px;
+
+    @include u.breakpoint-up(large) {
+      grid-area: copyrights;
+      justify-self: end;
+      padding-bottom: 50px;
+    }
   }
 }
