@@ -96,7 +96,7 @@
 
       }
 
-      .cap {
+      .caption {
         position: absolute;
         bottom: 0;
         max-width: 52%;
@@ -117,15 +117,15 @@
     }
 
     &--item:hover {
-      opacity: 0.2;
+      opacity: 0.45;
       transition: opacity 200ms ease-in-out;
       transition: transform 200ms ease-in-out;
       transform: scale(1.05);
 
-      .cap {
-        color: black;
+      .caption {
+        transition: transform 200ms ease-in-out;
+        transform: scale(1.05);
         font-weight: bold;
-        opacity: 1;
       }
     }
 

@@ -57,28 +57,28 @@
 
       @include u.breakpoint-up(large) {
         font-size: 15px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        background: white;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+      }
+
+      &:hover {
+        color: white;
+        transition: color 200ms ease-in-out;
 
         &::before {
-          content: "";
-          display: block;
-          position: absolute;
-          height: 2px;
-          width: 100%;
-          left: 0;
-          right: 0;
-          bottom: -5px;
-          background: white;
-          opacity: 0;
-          transition: opacity 200ms ease-in-out;
-        }
-
-        &:hover {
-          color: white;
-          transition: color 200ms ease-in-out;
-
-          &::before {
-            opacity: 1;
-          }
+          opacity: 1;
         }
       }
     }
