@@ -46,6 +46,9 @@
 
       @include u.breakpoint-up(large) {
         margin: 0;
+        width: 157px;
+        height: 40px;
+        font-size: 15px;
       }
     }
 
