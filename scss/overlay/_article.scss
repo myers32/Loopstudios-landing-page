@@ -130,7 +130,7 @@
     }
 
     &--earth {
-      background-image: url(/images/mobile/image-deep-earth.jpg);
+      background-image: url(../../images/mobile/image-deep-earth.jpg);
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-deep-earth.JPG);
