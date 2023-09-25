@@ -2,10 +2,7 @@
 
 *[Link to the project](https://myers32.github.io/loopstudios-landing-page/)*
 
-# This project is still in progres
-
 #### This project is made by ✨myself.✨ 
-
 
 ## *What do this project contain?*
 
@@ -18,3 +15,5 @@ It is made for the training purposes of course! I am a a self-taught developer.
 
 ## Here you can find quick preview of the project: ![desktop-preview](https://github.com/myers32/loopstudios-landing-page/assets/122280628/d7a5ff3d-7791-4e88-b1aa-cf1404222cae)
 
+
+# This project is still in progres I am still learning animations in css. That's why you cannot find it on this website! 😂😊
