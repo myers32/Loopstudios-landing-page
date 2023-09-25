@@ -1,0 +1,49 @@
+@use "../globals" as g;
+@use "../util" as u;
+
+.ham {
+
+  // &__menu {
+  //   position: absolute;
+  //   z-index: 1;
+  //   width: 100vw;
+  //   width: 100%;
+  //   height: 100vh;
+  //   right: 0;
+  //   top: 0;
+  //   background-color: black;
+  // }
+
+  &--nav {
+
+    .logo {
+      padding: 50px 0;
+    }
+
+    // .button {
+    //   >span {
+    //     position: absolute;
+    //     z-index: 1;
+    //     display: block;
+    //     width: 30px;
+    //     height: 3px;
+    //     background-color: g.$white;
+    //     margin: 6px 0;
+    //   }
+
+    // >span:first-child {
+    //   transform: rotate(45deg);
+    // }
+
+    // >span:nth-child(2) {
+    //   opacity: 0;
+    // }
+
+    // >span:last-child {
+    //   transform: rotate(-45deg);
+    // }
+  }
+
+  &--links {}
+
+}

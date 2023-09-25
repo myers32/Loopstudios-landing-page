@@ -21,10 +21,16 @@
   <header class="header">
 
     <div class="header__image">
-      <nav class="container container--pall header__nav">
+      <nav class="header__nav container container--pall">
         
         <a href="#" class="header__logo">
           <img src="images/logo.svg" alt="Loopstudios">
+        </a>
+
+        <a href="#" id="btnHamburger" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
 
         <div class="header__links hide-for-mobile">
@@ -36,29 +42,8 @@
         </div>
       </nav>
 
-      <div class="header__menu hide-for-desktop container">
-        <div class="header__menu--nav">
-          <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-
-          <a href="#" class="header__menu--logo">
-            <img src="images/logo.svg" alt="Loopstudios">
-          </a>
-        </div>
-        <div class="header__menu--links">
-          <a href="#">About</a>
-          <a href="#">Careers</a>
-          <a href="#">Events</a>
-          <a href="#">Products</a>
-          <a href="#">Support</a>
-        </div>
-      </div>
-
-      <div class="hero">
-        <div class="hero__container container">
+      <div class="hero container">
+        <div class="hero__content">
           <div class="hero__description">
             <div class="hero__table">
               <div class="hero__tableText">
@@ -70,6 +55,31 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="ham__menu container hide-for-desktop hide-for-mobile">
+      
+      <div class="ham__menu--nav">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Loopstudios">
+        </a>
+       
+        <div class="menu">
+        <a href="#" id="btnHamburger" class="button hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <div class="ham__menu--links">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </div>
+
     </div>
 
   </header>
