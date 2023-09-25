@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/scss/dist/style.css">
+  <link rel="stylesheet" href="scss/dist/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -17,20 +17,14 @@
 </head>
 
 <body>
-  
+
   <header class="header">
 
     <div class="header__image">
-      <div class="overlay has-fade"></div>
-
       <nav class="container container--pall header__nav">
+        
         <a href="#" class="header__logo">
           <img src="images/logo.svg" alt="Loopstudios">
-        </a>
-        <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
         </a>
 
         <div class="header__links hide-for-mobile">
@@ -42,12 +36,25 @@
         </div>
       </nav>
 
-      <div class="header__menu hide-for-desktop">
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+      <div class="header__menu hide-for-desktop container">
+        <div class="header__menu--nav">
+          <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <a href="#" class="header__menu--logo">
+            <img src="images/logo.svg" alt="Loopstudios">
+          </a>
+        </div>
+        <div class="header__menu--links">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
       </div>
 
       <div class="hero">
