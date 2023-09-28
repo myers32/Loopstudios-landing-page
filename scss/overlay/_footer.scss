@@ -13,7 +13,7 @@
         "logo socials"
         "links copyrights";
       justify-items: start;
-      margin-top: 150px;
+      margin-top: 9.375rem;
     }
   }
 
@@ -21,13 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 45px;
+    padding-top: 4.375rem;
+    padding-bottom: 2.8125rem;
 
     @include u.breakpoint-up(large) {
       grid-area: logo;
-      padding-top: 50px;
-      padding-bottom: 36px;
+      padding-top: 3.125rem;
+      padding-bottom: 2.25rem;
     }
   }
 
@@ -36,15 +36,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
-    padding-bottom: 60px;
+    row-gap: 1.25rem;
+    padding-bottom: 3.75rem;
 
     @include u.breakpoint-up(large) {
       grid-area: links;
       flex-direction: row;
-      column-gap: 20px;
+      column-gap: 1.25rem;
       align-items: start;
-      padding-bottom: 50px;
+      padding-bottom: 3.125rem;
     }
 
     a {
@@ -52,23 +52,23 @@
       line-height: 1.5;
       font-family: "Alata", sans-serif;
       color: g.$darkGray;
-      font-size: 17px;
+      font-size: 1.0625rem;
       font-weight: 400;
 
 
       @include u.breakpoint-up(large) {
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        height: 2px;
+        height: 0.125rem;
         width: 100%;
         left: 0;
         right: 0;
-        bottom: -5px;
+        bottom: -0.3125rem;
         background: white;
         opacity: 0;
         transition: opacity 200ms ease-in-out;
@@ -89,8 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 24px;
-    padding-bottom: 20px;
+    column-gap: 1.5rem;
+    padding-bottom: 1.25rem;
 
     @include u.breakpoint-up(large) {
       grid-area: socials;
@@ -105,11 +105,11 @@
         content: "";
         display: block;
         position: absolute;
-        height: 2px;
+        height: 0.125rem;
         width: 100%;
         left: 0;
-        right: 24px;
-        bottom: -8px;
+        right: 1.5rem;
+        bottom: -0.5rem;
         background: white;
         opacity: 0;
         transition: opacity 200ms ease-in-out;
@@ -133,15 +133,15 @@
     text-align: center;
     font-family: "Alata", sans-serif;
     color: g.$veryDarkGray;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 400;
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 
     @include u.breakpoint-up(large) {
       grid-area: copyrights;
       justify-self: end;
-      padding-bottom: 50px;
-      font-size: 15px;
+      padding-bottom: 3.125rem;
+      font-size: 0.9375rem;
     }
   }
 }

@@ -4,12 +4,12 @@
 .feature {
 
   .container {
-    padding-top: 122px;
-    padding-bottom: 122px;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
 
     @include u.breakpoint-up(large) {
-      padding-top: 160px;
-      padding-bottom: 160px;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
     }
   }
 
@@ -17,7 +17,7 @@
     position: relative;
 
     @include u.breakpoint-up(large) {
-      // height: 660px;
+      // height: 41.25rem;
     }
   }
 
@@ -26,10 +26,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 285px;
+    height: 17.8125rem;
 
     @include u.breakpoint-up(medium) {
-      height: 400px;
+      height: 25rem;
       background-size: cover;
     }
 
@@ -38,58 +38,58 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      width: 731px;
-      height: 500px;
+      width: 45.6875rem;
+      height: 31.25rem;
     }
   }
 
   &__text {
-    padding-top: 58px;
+    padding-top: 3.625rem;
 
     @include u.breakpoint-up(medium) {
-      padding-top: 50px;
+      padding-top: 3.125rem;
     }
 
     @include u.breakpoint-up(large) {
       position: absolute;
       background-color: white;
-      width: 554px;
-      height: 410px;
+      width: 34.625rem;
+      height: 25.625rem;
       padding-top: 0;
-      right: -39px;
-      bottom: -95px;
-      padding-top: 127px;
+      right: -2.4375rem;
+      bottom: -5.9375rem;
+      padding-top: 7.9375rem;
     }
 
     h2 {
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: 2.25rem;
       text-align: center;
 
       @include u.breakpoint-up(large) {
-        padding-left: 110px;
-        font-size: 38px;
+        padding-left: 6.875rem;
+        font-size: 2.375rem;
         text-align: start;
       }
     }
 
     p {
-      padding-top: 20px;
-      padding-right: 30px;
-      padding-left: 30px;
+      padding-top: 1.25rem;
+      padding-right: 1.875rem;
+      padding-left: 1.875rem;
       line-height: 1.5;
       text-align: center;
       font-family: u.$font-alata;
       color: hsl(0, 0%, 64%);
-      font-size: 17px;
+      font-size: 1.0625rem;
       font-weight: 400;
 
       @include u.breakpoint-up(large) {
-        padding-top: 25px;
-        padding-right: 30px;
+        padding-top: 1.5625rem;
+        padding-right: 1.875rem;
         padding-bottom: 0;
-        padding-left: 110px;
-        font-size: 14px;
+        padding-left: 6.875rem;
+        font-size: 0.875rem;
         text-align: start;
       }
     }

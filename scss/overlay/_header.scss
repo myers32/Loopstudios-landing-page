@@ -8,11 +8,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 828px;
+    height: 51.75rem;
 
     @include u.breakpoint-up(large) {
       background-image: url(../../images/desktop/image-hero.jpg);
-      height: 650px;
+      height: 40.625rem;
     }
   }
 
@@ -25,12 +25,12 @@
   &__logo {
 
     img {
-      width: 184px;
-      height: 28px;
+      width: 11.5rem;
+      height: 1.75rem;
 
       @include u.breakpoint-up(large) {
-        width: 194px;
-        height: 33px;
+        width: 12.125rem;
+        height: 2.0625rem;
       }
     }
   }
@@ -39,41 +39,39 @@
 
     >span {
       display: block;
-      width: 26px;
-      height: 2px;
+      width: 1.625rem;
+      height: 0.125rem;
       background-color: white;
-      transition: all 300ms ease-in-out;
-      transform-origin: 3px 1px;
 
       &:not(:last-child) {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
       }
     }
   }
 
   &__links {
-    padding-top: 11px;
+    padding-top: 0.6875rem;
 
     @include u.breakpoint-up(large) {
       display: flex;
-      column-gap: 33px;
+      column-gap: 2.0625rem;
     }
 
     a {
       position: relative;
       color: g.$white;
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: bold;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        height: 2px;
+        height: 0.125rem;
         width: 100%;
         left: 0;
         right: 0;
-        bottom: -5px;
+        bottom: -0.3125rem;
         background: g.$white;
         opacity: 0;
         transition: opacity 200ms ease-in;

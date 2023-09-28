@@ -6,7 +6,7 @@
   &__container {}
 
   &__header {
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
 
     @include u.breakpoint-up(large) {
       display: flex;
@@ -15,23 +15,23 @@
 
     h2 {
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: 2.25rem;
       text-align: center;
     }
 
     &--button {
-      width: 201px;
-      height: 52px;
+      width: 12.5625rem;
+      height: 3.25rem;
       margin: 0 auto;
-      margin-top: 43px;
-      margin-bottom: 122px;
-      border: 2px solid black;
+      margin-top: 2.6875rem;
+      margin-bottom: 7.625rem;
+      border: 0.125rem solid black;
       font-family: "Alata", sans-serif;
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: center;
       text-transform: uppercase;
       line-height: 2.5;
-      letter-spacing: 7px;
+      letter-spacing: 0.4375rem;
       cursor: pointer;
 
       &:hover {
@@ -47,9 +47,9 @@
 
       @include u.breakpoint-up(large) {
         margin: 0;
-        width: 157px;
-        height: 40px;
-        font-size: 15px;
+        width: 9.8125rem;
+        height: 2.5rem;
+        font-size: 0.9375rem;
       }
     }
 
@@ -71,13 +71,13 @@
 
     &--item {
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       width: 100%;
-      height: 153px;
+      height: 9.5625rem;
 
       @include u.breakpoint-up(large) {
-        width: 256px;
-        height: 450px;
+        width: 16rem;
+        height: 28.125rem;
       }
 
       a {
@@ -87,8 +87,8 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
-        border-radius: 5px;
+        box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.20);
+        border-radius: 0.3125rem;
 
         @include u.breakpoint-up(large) {
           width: 100%;
@@ -100,17 +100,17 @@
         position: absolute;
         bottom: 0;
         max-width: 52%;
-        padding: 30px 28px;
+        padding: 1.875rem 1.75rem;
         color: g.$white;
         font-family: u.$font-josefin;
-        font-size: 28px;
+        font-size: 1.75rem;
         text-transform: uppercase;
         cursor: pointer;
 
         @include u.breakpoint-up(large) {
-          font-size: 32px;
+          font-size: 2rem;
           bottom: 0;
-          padding: 40px;
+          padding: 2.5rem;
           max-width: 100%;
         }
       }
@@ -199,7 +199,7 @@
 
     &--fisheye {
       background-image: url(../../images/mobile/image-fisheye.jpg);
-      margin-bottom: 43px;
+      margin-bottom: 2.6875rem;
 
       @include u.breakpoint-up(large) {
         background-image: url(../../images/desktop/image-fisheye.jpg);

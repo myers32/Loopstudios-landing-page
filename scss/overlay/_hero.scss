@@ -3,38 +3,36 @@
 
 .hero {
   &__description {
-    padding-top: 150px;
+    padding-top: 9.375rem;
 
 
     @include u.breakpoint-up(large) {
-      padding-top: 58px;
-      // padding-right: 30px;
-      // padding-left: 30px;
-      padding-bottom: 145px;
+      padding-top: 3.625rem;
+      padding-bottom: 9.0625rem;
     }
   }
 
   &__table {
-    border: 2px solid g.$white;
-    padding: 35px 35px 25px 35px;
+    border: 0.125rem solid g.$white;
+    padding: 2.1875rem 2.1875rem 1.5625rem 2.1875rem;
 
     @include u.breakpoint-up(large) {
       max-width: 58%;
-      padding: 42px 42px 32px 42px;
+      padding: 2.625rem 2.625rem 2rem 2.625rem;
     }
   }
 
   &__tableText {
 
     p {
-      font-size: 48px;
+      font-size: 3rem;
       color: g.$white;
       text-transform: uppercase;
       margin: 0;
       word-wrap: break-word;
 
       @include u.breakpoint-up(medium) {
-        font-size: 55px;
+        font-size: 3.4375rem;
 
         br:nth-child(3) {
           display: none;
@@ -42,7 +40,7 @@
       }
 
       @include u.breakpoint-up(large) {
-        font-size: 68px;
+        font-size: 4.25rem;
         line-height: 0.9;
 
         br:nth-child(1) {

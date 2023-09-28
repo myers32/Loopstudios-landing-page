@@ -23,31 +23,30 @@ body {
   font-family: u.$font-josefin;
   font-size: 0.9375rem;
   font-weight: 300;
-  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 69.375rem;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 1.875rem;
 
   @include u.breakpoint-up(large) {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
   }
 
   &--pall {
-    padding: 50px 30px;
+    padding: 3.125rem 1.875rem;
 
     @include u.breakpoint-up(medium) {
-      padding: 50px 30px;
+      padding: 3.125rem 1.875rem;
     }
 
     @include u.breakpoint-up(large) {
-      padding-top: 64px;
-      padding-right: 10px;
-      padding-bottom: 64px;
-      padding-left: 10px;
+      padding-top: 4rem;
+      padding-right: 0.625rem;
+      padding-bottom: 4rem;
+      padding-left: 0.625rem;
     }
   }
 }
