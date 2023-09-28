@@ -3,7 +3,7 @@
 *[Link to the project](https://myers32.github.io/loopstudios-landing-page/)*
 
 #### This project is made by ✨myself.✨ 
-#### It is still in progress. I am still learning animations in css. That's why you cannot find it on this website! 😂😊
+#### It is still in progress. I am still learning and improving my skills😊
 
 ## *What do this project contain?*
 
