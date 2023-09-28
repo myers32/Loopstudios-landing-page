@@ -2,14 +2,17 @@
 @use "../util" as u;
 
 .header {
-  position: relative;
 
   &__image {
     background-image: url(../../images/mobile/image-hero.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 51.75rem;
+    height: 100vh;
+
+    @include u.breakpoint-up(medium) {
+      height: 51.75rem;
+    }
 
     @include u.breakpoint-up(large) {
       background-image: url(../../images/desktop/image-hero.jpg);
