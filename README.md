@@ -1,4 +1,4 @@
-# Project "Loopstudio landing page"
+# Project "Loopstudios landing page"
 
 *[Link to the project](https://myers32.github.io/Loopstudios-landing-page/)*
 
