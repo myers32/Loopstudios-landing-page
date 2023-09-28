@@ -2,6 +2,7 @@
 @use "../util" as u;
 
 .header {
+  position: relative;
 
   &__image {
     background-image: url(../../images/mobile/image-hero.jpg);

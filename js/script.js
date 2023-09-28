@@ -7,7 +7,6 @@ const overlay = document.querySelector(".ham__menu--overlay");
 btnOpen.addEventListener("click", () => {
     hamMenu.classList.remove("ham__menu--overlay");
     body.classList.add("noScroll");
-
 });
 
 btnClose.addEventListener("click", () => {
