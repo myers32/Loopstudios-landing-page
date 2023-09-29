@@ -17,7 +17,7 @@ It is made for the training purposes of course! I am a a self-taught developer.
 
 This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
 
-## Your users should be able to:
+## Users should be able to:
 
 View the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page.
 
