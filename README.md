@@ -20,8 +20,8 @@ This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included f
 
 # Your users should be able to:
 
-View the optimal layout for the site depending on their device's screen size
-See hover states for all interactive elements on the page
+-View the optimal layout for the site depending on their device's screen size,
+-See hover states for all interactive elements on the page.
 
 ## Here you can find quick preview of the project: 
 ![desktop-preview](https://github.com/myers32/loopstudios-landing-page/assets/122280628/d7a5ff3d-7791-4e88-b1aa-cf1404222cae)
