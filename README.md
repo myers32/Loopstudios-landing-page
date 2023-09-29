@@ -3,7 +3,6 @@
 *[Link to the project](https://myers32.github.io/Loopstudios-landing-page/)*
 
 ## This project is made by ✨myself.✨ 
-## It is still in progress. I am still learning and improving my skills😊
 
 ## What do this project contain?
 
