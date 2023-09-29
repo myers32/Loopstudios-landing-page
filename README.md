@@ -18,10 +18,17 @@ It is made for the training purposes of course! I am a a self-taught developer.
 
 This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle.
 
-# Your users should be able to:
+## Your users should be able to:
 
--View the optimal layout for the site depending on their device's screen size,
--See hover states for all interactive elements on the page.
+View the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page.
+
+## Built with
+
+- Semantic HTML5 markup
+- SCSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
 ## Here you can find quick preview of the project: 
 ![desktop-preview](https://github.com/myers32/loopstudios-landing-page/assets/122280628/d7a5ff3d-7791-4e88-b1aa-cf1404222cae)
